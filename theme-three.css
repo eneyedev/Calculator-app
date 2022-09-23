@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  --very-dark-violet-main-background: hsl(268, 75%, 9%);
+  --very-dark-violet-toggle-background-and-keypad-background-and-screen-background: hsl(
+    268,
+    71%,
+    12%
+  );
+
+  /*    Key*/
+
+  --dark-violet-key-background: hsl(281, 89%, 26%);
+  --vivid-magenta-key-shadow: hsl(285, 91%, 52%);
+  --pure-cyan-key-background-toggle: hsl(176, 100%, 44%);
+  --soft-cyan-key-shadow: hsl(177, 92%, 70%);
+  --very-dark-violet-key-background: hsl(268, 47%, 21%);
+  --dark-magenta-key-shadow: hsl(290, 70%, 36%);
+
+  /*    Text*/
+  --light-yellow: hsl(52, 100%, 62%);
+  --very-dark-blue: hsl(198, 20%, 13%);
+
+  background: var(--very-dark-violet-main-background);
+  font-family: "Monospaced", sans-serif;
+}
+
+.p1 {
+  color: var(--light-yellow);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+}
+
+.header {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo .p1 {
+  cursor: pointer;
+}
+
+.themes {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: var(--light-yellow);
+}
+
+.themes ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.checked {
+  color: white;
+  background: var(--dark-magenta-key-shadow);
+  padding: 0.5rem;
+  width: 140%;
+  text-align: center;
+  border-radius: 5rem;
+  display: block;
+  font-weight: 500;
+}
+
+.unchecked {
+  color: white;
+  background: var(--very-dark-violet-key-background);
+  padding: 0.5rem;
+  width: 140%;
+  text-align: center;
+  border-radius: 5rem;
+  display: block;
+  font-weight: 500;
+}
+
+.input {
+  background: var(
+    --very-dark-violet-toggle-background-and-keypad-background-and-screen-background
+  );
+  padding: 1rem;
+  border-radius: 0.8rem;
+  text-align: right;
+  cursor: pointer;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.input .p1 {
+  font-size: 40px;
+}
+
+.keys {
+  background: var(
+    --very-dark-violet-toggle-background-and-keypad-background-and-screen-background
+  );
+  padding: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.keys ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.numbers {
+  background: var(--very-dark-violet-key-background);
+  padding: 1rem;
+  width: 40%;
+  text-align: center;
+  font-size: 32px;
+  color: var(--light-yellow);
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 0.3rem;
+}
+
+.del {
+  background: var(--dark-violet-key-background);
+  color: white;
+  padding: 1rem;
+  width: 30%;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 0.3rem;
+}
+
+.reset {
+  background: var(--dark-violet-key-background);
+  color: white;
+  padding: 1rem;
+  width: 50%;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 0.3rem;
+}
+
+.equal {
+  background: var(--pure-cyan-key-background-toggle);
+  color: white;
+  padding: 1rem;
+  width: 50%;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 0.3rem;
+}

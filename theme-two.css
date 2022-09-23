@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  --light-gray-main-background: hsl(0, 0%, 90%);
+  --grayish-red-toggle-background-and-keypad-background: hsl(0, 5%, 81%);
+  --very-light-gray-screen-background: hsl(0, 0%, 93%);
+
+  /*    Key*/
+
+  --dark-moderate-cyan-key-background: hsl(185, 42%, 37%);
+  --very-dark-cyan-key-shadow: hsl(185, 58%, 25%);
+  --orange-key-background-toggle: hsl(25, 98%, 40%);
+  --dark-orange-key-shadow: hsl(25, 99%, 27%);
+  --light-grayish-yellow-key-background: hsl(45, 7%, 89%);
+  --dark-grayish-orange-key-shadow: hsl(35, 11%, 61%);
+
+  /*    Text*/
+  --very-dark-grayish-yellow: hsl(60, 10%, 19%);
+
+  background: var(--light-gray-main-background);
+  font-family: "Monospaced", sans-serif;
+}
+
+.p1 {
+  color: var(--very-dark-grayish-yellow);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+}
+
+.header {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo .p1 {
+  cursor: pointer;
+}
+
+.themes {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: var(--very-dark-grayish-yellow);
+}
+
+.themes ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.checked {
+  color: white;
+  background: var(--dark-orange-key-shadow);
+  padding: 0.5rem;
+  width: 140%;
+  text-align: center;
+  border-radius: 5rem;
+  display: block;
+  font-weight: 500;
+}
+
+.unchecked {
+  color: white;
+  background: var(--orange-key-background-toggle);
+  padding: 0.5rem;
+  width: 140%;
+  text-align: center;
+  border-radius: 5rem;
+  display: block;
+  font-weight: 500;
+}
+
+.input {
+  background: var(--very-light-gray-screen-background);
+  padding: 1rem;
+  border-radius: 0.8rem;
+  text-align: right;
+  cursor: pointer;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.input .p1 {
+  font-size: 40px;
+}
+
+.keys {
+  background: var(--grayish-red-toggle-background-and-keypad-background);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.keys ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.numbers {
+  background: var(--light-grayish-yellow-key-background);
+  padding: 1rem;
+  width: 40%;
+  text-align: center;
+  font-size: 32px;
+  color: var(--very-dark-grayish-yellow);
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 0.3rem;
+}
+
+.del {
+  background: var(--dark-moderate-cyan-key-background);
+  color: white;
+  padding: 1rem;
+  width: 30%;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 0.3rem;
+}
+
+.reset {
+  background: var(--dark-moderate-cyan-key-background);
+  color: white;
+  padding: 1rem;
+  width: 50%;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 0.3rem;
+}
+
+.equal {
+  background: var(--orange-key-background-toggle);
+  color: white;
+  padding: 1rem;
+  width: 50%;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 0.3rem;
+}
